@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>FOR MY ONE AND ONLY.</strong>
+                        <p>
+                            Hi AHLEE HAPPY ANNIVERSARY!!!! I WROTE THIS DAYS BEFORE OUR DATE
+                            SANA MASARAP ANG KINAIN NYO NI SHOWN AND SANA NAGENJOY KA THAT DAY
+                           I WANT YOU TO KNOW NA  I WILL DO EVERYTHING TO MAKE YOU HAPPY. 
+                           I LOVE YOU SO MUCH!!!!!!!!!!!!
+                                            
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
